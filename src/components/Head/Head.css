@@ -1,0 +1,53 @@
+.head {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.659),rgba(0, 0, 0, 0.659)),url("../../assets/hero.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head .info {
+    text-align: center;
+}
+
+.head .info h1 {
+    font-size: 60px;
+}
+
+.head .info p {
+    font-size: 18px;
+    width: 80%;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+.head .info .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.head .info .btn img {
+    margin-top: 3px;
+}
+
+.head .info .btn:hover img {
+    animation: leftgo 1s linear infinite;
+}
+
+@keyframes leftgo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

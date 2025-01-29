@@ -1,0 +1,51 @@
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.gallery img {
+    width: 100%;
+    flex-basis: 15%;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.more {
+    display: flex;
+    background-color: #333;
+    align-items: center;
+    width: fit-content;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 30px;
+    gap: 10px;
+    cursor: pointer;
+    margin: 40px auto;
+}
+
+.more:hover img {
+    animation: leftgo 1s linear infinite;
+}
+
+.more img {
+    width: 20px;
+    margin-top: 3px;
+}
+
+@keyframes leftgo {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

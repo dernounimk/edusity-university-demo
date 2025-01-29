@@ -1,0 +1,45 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 1%;
+}
+
+.about .video {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .video video {
+    width: 70%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.about .info {
+    width: 100%;
+}
+
+.about .info h2 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.about .info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #666;
+}
+
+@media (max-width: 767px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .video {
+        margin-bottom: 50px;
+    }
+}
