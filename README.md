@@ -33,7 +33,3 @@ A modern, fully responsive university landing page built with **React** and **Vi
 - **Vite** – Next-generation frontend tooling
 - **ESLint** – Code linting for quality
 - **CSS** – Custom styling
-
----
-
-## 📂 Project Structure
